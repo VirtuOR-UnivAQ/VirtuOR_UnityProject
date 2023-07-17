@@ -36,7 +36,8 @@ public class ignora_assi : MonoBehaviour
 
     public void ResetRotation()
     {
+        
         transform.rotation = resetRotation.rotation;
-
+           
     }
 }
