@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class ignora_assi : MonoBehaviour
@@ -5,6 +6,7 @@ public class ignora_assi : MonoBehaviour
     public bool ignoreXRotation = false;
     public bool ignoreYRotation = false;
     public bool ignoreZRotation = false;
+    public bool limitRotation = false;
     public float maxRotation = 45f;
 
     private Quaternion initialRotation;
@@ -32,11 +34,17 @@ public class ignora_assi : MonoBehaviour
         if (ignoreZRotation)
             eulerRotation.z = initialRotation.eulerAngles.z;
 
-        if(eulerRotation.y > 45f || eulerRotation.y < -45f)
-        {
-            eulerRotation.y = 45f;
-        }
+        if(limitRotation){
+            if(eulerRotation.y >= maxRotation && eulerRotation.y < 180)
+            {
+                eulerRotation.y = maxRotation;
+
+            }else if (eulerRotation.y <= 315 && eulerRotation.y >= 180)
+            {
+                eulerRotation.y = 360-maxRotation;
+            }
         transform.rotation = Quaternion.Euler(eulerRotation);
+        }
     }
 
     public void ResetRotation()
