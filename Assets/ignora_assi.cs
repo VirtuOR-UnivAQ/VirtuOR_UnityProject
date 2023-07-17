@@ -5,6 +5,7 @@ public class ignora_assi : MonoBehaviour
     public bool ignoreXRotation = false;
     public bool ignoreYRotation = false;
     public bool ignoreZRotation = false;
+    public float maxRotation = 45f;
 
     private Quaternion initialRotation;
     //private Quaternion followRotation;
@@ -31,6 +32,10 @@ public class ignora_assi : MonoBehaviour
         if (ignoreZRotation)
             eulerRotation.z = initialRotation.eulerAngles.z;
 
+        if(eulerRotation.y > 45f || eulerRotation.y < -45f)
+        {
+            eulerRotation.y = 45f;
+        }
         transform.rotation = Quaternion.Euler(eulerRotation);
     }
 
