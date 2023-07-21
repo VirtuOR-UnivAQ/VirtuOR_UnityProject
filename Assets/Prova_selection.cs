@@ -9,7 +9,7 @@ public class Prova_selection : MonoBehaviour
     [SerializeField]
     public XRInteractionManager interactionManager;
     [SerializeField]
-    public XRGrabInteractable interactableToSelect;
+    public XRBaseInteractable interactableToSelect;
     [SerializeField]
     public XRRayInteractor interactorToUse;
 

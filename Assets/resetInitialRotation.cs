@@ -5,7 +5,7 @@ using UnityEngine.InputSystem.XR;
 public class resetInitialRotation : MonoBehaviour
 {
     //public Transform resetRotation;
-    public Transform resetRotation;
+    public Quaternion resetRotation;
 
     private void Start()
     {
@@ -15,7 +15,7 @@ public class resetInitialRotation : MonoBehaviour
     public void ResetRotation()
     {
         
-        transform.rotation = resetRotation.rotation;
+        transform.rotation = resetRotation;
            
     }
 }
