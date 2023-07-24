@@ -16,12 +16,43 @@ namespace UnityEngine.XR.Content.Interaction
         [SerializeField]
         [Tooltip("The speed at which the projectile is launched")]
         float m_LaunchSpeed = 1.0f;
+
+        [SerializeField]
+        [Tooltip("Il suono da riprodurra quando sparo")]
+        AudioSource m_audioFeedback = null;
+
+        [SerializeField]
+        [Tooltip("Il ritardo in secondi tra le esecuzioni di Fire")]
+        float m_fireDelay = 1.0f;
+
+        private bool canFire = false;
+        private float lastFireTime = 0.0f;
+
+        public void Update()
+        {
+          // Controlla se il ritardo tra le esecuzioni di Fire è trascorso
+            if (!canFire)
+            {
+                lastFireTime += Time.deltaTime;
+                if (lastFireTime >= m_fireDelay)
+                {
+                    canFire = true;
+                    lastFireTime = 0.0f;
+                }
+            }
+         
+        }
         public void Fire()
         {
-            GameObject newObject = Instantiate(m_ProjectilePrefab, m_StartPoint.position, m_StartPoint.rotation, null);
+            if(canFire){
+                m_audioFeedback.Play();
+                GameObject newObject = Instantiate(m_ProjectilePrefab, m_StartPoint.position, m_StartPoint.rotation, null);
 
-            if (newObject.TryGetComponent(out Rigidbody rigidBody))
-                ApplyForce(rigidBody);
+                if (newObject.TryGetComponent(out Rigidbody rigidBody) && canFire)
+                    ApplyForce(rigidBody);
+            
+                canFire = false;
+
         }
 
         void ApplyForce(Rigidbody rigidBody)
@@ -30,4 +61,5 @@ namespace UnityEngine.XR.Content.Interaction
             rigidBody.AddForce(force);
         }
     }
+}
 }
