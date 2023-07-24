@@ -886,6 +886,11 @@ PrefabInstance:
       propertyPath: m_Renderer
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 5334022573883613873, guid: c00169bba4200754483e7c624531d00b,
+        type: 3}
+      propertyPath: m_AllowGazeSelect
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5334022573883613875, guid: c00169bba4200754483e7c624531d00b,
         type: 3}
       propertyPath: m_RootOrder
@@ -11812,7 +11817,7 @@ MonoBehaviour:
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
-    m_Reference: {fileID: -8270564778575511633, guid: c348712bda248c246b8c49b3db54643f,
+    m_Reference: {fileID: 83097790271614945, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
   m_SelectActionValue:
     m_UseReference: 1
@@ -11825,7 +11830,7 @@ MonoBehaviour:
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
-    m_Reference: {fileID: -8270564778575511633, guid: c348712bda248c246b8c49b3db54643f,
+    m_Reference: {fileID: 2307464322626738743, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
   m_ActivateAction:
     m_UseReference: 1
@@ -14061,12 +14066,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_GroupName: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 2082521901}
   m_StartingGroupMembers:
   - {fileID: 584242537}
   - {fileID: 857975696}
   - {fileID: 1530054074}
-  m_StartingInteractionOverridesMap: []
+  - {fileID: 849459338}
+  - {fileID: 1351762726}
+  m_StartingInteractionOverridesMap:
+  - groupMember: {fileID: 584242537}
+    overrideGroupMembers: []
 --- !u!114 &1595109677
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14152,10 +14161,10 @@ MonoBehaviour:
   m_IsTrackedAction:
     m_UseReference: 0
     m_Action:
-      m_Name: 
+      m_Name: Is Tracked
       m_Type: 1
       m_ExpectedControlType: 
-      m_Id: 
+      m_Id: 46980155-75ed-4b1f-b359-86dfef2617b3
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -14255,10 +14264,10 @@ MonoBehaviour:
   m_UIScrollAction:
     m_UseReference: 0
     m_Action:
-      m_Name: 
+      m_Name: UI Scroll
       m_Type: 0
       m_ExpectedControlType: Vector2
-      m_Id: 
+      m_Id: a86da76f-21cc-4698-96d3-7d0fb40d163b
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -14333,9 +14342,9 @@ MonoBehaviour:
   m_DirectInteractor: {fileID: 857975696}
   m_RayInteractor: {fileID: 1530054074}
   m_TeleportInteractor: {fileID: 1351762726}
-  m_TeleportModeActivate: {fileID: -8061240218431744966, guid: c348712bda248c246b8c49b3db54643f,
+  m_TeleportModeActivate: {fileID: 7904272356298805229, guid: c348712bda248c246b8c49b3db54643f,
     type: 3}
-  m_TeleportModeCancel: {fileID: 2307464322626738743, guid: c348712bda248c246b8c49b3db54643f,
+  m_TeleportModeCancel: {fileID: -8061240218431744966, guid: c348712bda248c246b8c49b3db54643f,
     type: 3}
   m_Turn: {fileID: -6493913391331992944, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   m_SnapTurn: {fileID: -8525429354371678379, guid: c348712bda248c246b8c49b3db54643f,
