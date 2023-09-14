@@ -1808,6 +1808,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "ExitMenu",
+                    "type": "Button",
+                    "id": "aa574b63-1462-45c5-87b7-0b7a4fd92414",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -2166,7 +2175,7 @@
                 {
                     "name": "",
                     "id": "9f2a7c29-a588-4b6a-a966-955eb408c526",
-                    "path": "*/{Submit}",
+                    "path": "<Keyboard>/enter",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -2193,6 +2202,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "76c747b1-ae22-4e6a-8e55-fe88071fd7f4",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ExitMenu",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
