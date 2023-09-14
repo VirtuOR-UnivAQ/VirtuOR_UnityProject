@@ -8,10 +8,12 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Teleport_Reticle
-  m_Shader: {fileID: 45, guid: 0000000000000000f000000000000000, type: 0}
+  m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
   m_ValidKeywords:
   - _ALPHAPREMULTIPLY_ON
   - _EMISSION
+  - _SPECULAR_SETUP
+  - _SURFACE_TYPE_TRANSPARENT
   m_InvalidKeywords:
   - EFFECT_BUMP
   m_LightmapFlags: 0
@@ -20,7 +22,8 @@ Material:
   m_CustomRenderQueue: 3000
   stringTagMap:
     RenderType: Transparent
-  disabledShaderPasses: []
+  disabledShaderPasses:
+  - DepthOnly
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -120,7 +123,7 @@ Material:
     - _BevelOffset: 0
     - _BevelRoundness: 0
     - _BevelWidth: 0
-    - _Blend: 0
+    - _Blend: 1
     - _BlendOp: 0
     - _BumpFace: 0.5
     - _BumpOutline: 0.5
@@ -191,7 +194,7 @@ Material:
     - _ShaderFlags: 0
     - _Sharpness: 0
     - _Shininess: 0.078125
-    - _Smoothness: 0.5
+    - _Smoothness: 0.8
     - _SmoothnessTextureChannel: 0
     - _Smootness: 1
     - _SoftParticlesEnabled: 0
@@ -205,7 +208,7 @@ Material:
     - _StencilOp: 0
     - _StencilReadMask: 255
     - _StencilWriteMask: 255
-    - _Surface: 0
+    - _Surface: 1
     - _TessValue: 5
     - _TextureHeight: 512
     - _TextureWidth: 512
@@ -217,16 +220,16 @@ Material:
     - _WaveTile: 0.5
     - _WeightBold: 0.5
     - _WeightNormal: 0
-    - _WorkflowMode: 1
+    - _WorkflowMode: 0
     - _ZWrite: 0
     - __dirty: 1
     - g_flCornerAdjust: 0.5
     - g_flOutlineWidth: 0.005
     m_Colors:
-    - _BaseColor: {r: 0.29411766, g: 0.29411766, b: 0.5471698, a: 1}
+    - _BaseColor: {r: 0, g: 0.5943396, b: 0.16973808, a: 1}
     - _CameraFadeParams: {r: 0, g: Infinity, b: 0, a: 0}
     - _ClipRect: {r: -32767, g: -32767, b: 32767, a: 32767}
-    - _Color: {r: 0, g: 0.5943396, b: 0.16973811, a: 1}
+    - _Color: {r: 0.29411763, g: 0.29411763, b: 0.5471698, a: 1}
     - _ColorAddSubDiff: {r: -1, g: 1, b: 0, a: 0}
     - _DeepColor: {r: 0.31149876, g: 0.5266015, b: 0.5283019, a: 0}
     - _EmissionColor: {r: 0.37626222, g: 0.3662527, b: 0.5149178, a: 1}
