@@ -52,11 +52,6 @@ public class Teleport_prova_interactable : MonoBehaviour
 
         // Attendi il completamento del teletrasporto.
         yield return null;
-
-        // Riattiva l'oggetto dopo il teletrasporto.
-        gameObject.SetActive(true);
-
-        isTeleporting = false;
     }
 }
 
