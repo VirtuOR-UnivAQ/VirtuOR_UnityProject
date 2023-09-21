@@ -11,7 +11,7 @@ public class Prova_selection : MonoBehaviour
     [SerializeField]
     public XRBaseInteractable interactableToSelect;
     [SerializeField]
-    public XRRayInteractor interactorToUse;
+    public XRBaseControllerInteractor interactorToUse;
 
 
     private void Start()

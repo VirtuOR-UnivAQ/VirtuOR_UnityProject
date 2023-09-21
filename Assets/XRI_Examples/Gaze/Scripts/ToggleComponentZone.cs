@@ -1,10 +1,8 @@
-namespace UnityEngine.XR.Content.Interaction
-{
-    /// <summary>
-    /// This component is designed to easily toggle a specific component on or off when an object
-    /// enters the specified <see cref="triggerVolume"/>.
-    /// </summary>
-    [RequireComponent(typeof(Collider))]
+using System;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.Events;
+
     public class ToggleComponentZone : MonoBehaviour
     {
         [SerializeField]
@@ -36,34 +34,12 @@ namespace UnityEngine.XR.Content.Interaction
         }
 
         [SerializeField]
-        [Tooltip("Component to set the enabled state for. Will set the value to the Enable On Entry value upon entry and revert to original value on exit.")]
-        Behaviour m_ComponentToToggle;
+        [Tooltip("GameObject to set the enabled state for. Will set the value to the Enable On Entry value upon entry and revert to original value on exit.")]
+        List<GameObject> m_ObjectToToggle;
 
-        /// <summary>
-        /// Component to set the enabled state for. Will set the value to the
-        /// Enable On Entry value upon entry and revert to original value on exit.
-        /// </summary>
-        public Behaviour componentToToggle
-        {
-            get => m_ComponentToToggle;
-            set => m_ComponentToToggle = value;
-        }
-
-        [SerializeField]
-        [Tooltip("Sets whether to enable or disable the Component To Toggle upon entry into the Trigger Volume.")]
-        bool m_EnableOnEntry = true;
-
-        /// <summary>
-        /// Sets whether to enable or disable the Component To Toggle upon entry into the Trigger Volume.
-        /// </summary>
-        public bool enableOnEntry
-        {
-            get => m_EnableOnEntry;
-            set => m_EnableOnEntry = value;
-        }
-
-        bool m_InitialStateOnEntry;
-
+    public UnityEvent onEnterEvent;
+    public UnityEvent onExitEvent;
+    
         void Start()
         {
             if (m_TriggerVolume == null && !TryGetComponent(out m_TriggerVolume))
@@ -76,12 +52,20 @@ namespace UnityEngine.XR.Content.Interaction
                 m_TriggerVolume.isTrigger = true;
         }
 
-        void OnTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider other)
         {
             if (other != null && other == m_ActivationObject)
             {
-                m_InitialStateOnEntry = m_ComponentToToggle.enabled;
-                m_ComponentToToggle.enabled = m_EnableOnEntry;
+                Debug.Log("collisione");
+                
+                foreach (var item in m_ObjectToToggle)
+                {
+                    item.SetActive(true);
+                }
+
+                onEnterEvent.Invoke();
+                Debug.Log("ho attivato tutto");
+
             }
         }
 
@@ -89,8 +73,14 @@ namespace UnityEngine.XR.Content.Interaction
         {
             if (other != null && other == m_ActivationObject)
             {
-                m_ComponentToToggle.enabled = m_InitialStateOnEntry;
+                foreach (var item in m_ObjectToToggle)
+                {
+                    item.SetActive(false);
+                }
+                onExitEvent.Invoke();
+                Debug.Log("ho disattivato tutto");
             }
         }
-    }
 }
+
+
