@@ -9,6 +9,7 @@ public class Teleport_prova_interactable : MonoBehaviour
 {
      [SerializeField]
     public TeleportationProvider teleportationProvider;
+    public BaseTeleportationInteractable teleportInteractable;
     public Transform anchorPoint;  // L'oggetto a cui vuoi teletrasportarti.
 
     private XRBaseInteractable interactable;

@@ -27,8 +27,11 @@ public class Prova_selection : MonoBehaviour
         interactionManager.SelectEnter(selectInteractor, selectInteractable);
     }
 
-    /* public void DisableSelection()
+    public void DisableSelection()
     {
-        interactionManager.SelectExit(interactorToUse,interactableToSelect);
-    } */
+        var selectInteractor = interactorToUse as IXRSelectInteractor;
+        var selectInteractable = interactableToSelect as IXRSelectInteractable;
+
+        interactionManager.SelectExit(selectInteractor, selectInteractable);
+    }
 }
