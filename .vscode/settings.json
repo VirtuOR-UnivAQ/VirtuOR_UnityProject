@@ -1,7 +1,7 @@
 {
     "files.exclude": {
         "**/.DS_Store": true,
-        "**/.git": true,
+        "**/.git": false,
         "**/.gitmodules": true,
         "**/*.booproj": true,
         "**/*.pidb": true,
