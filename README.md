@@ -11,7 +11,7 @@ La versione corrente di VirtuOR è compatibile con le seguenti versioni dell'Edi
 
 * 2021.3.30f1 and later
 
-### Download del progetto
+### Download del progetto (copia locale)
 
 1. Clona o scarica questa repository in uno spazio di lavoro sul tuo disco
      1. Fai clic sul pulsante **⤓ Codice** in questa pagina per ottenere l'URL da clonare con Git o fai clic su **Scarica ZIP** per ottenere una copia di questo repository che puoi estrarre
@@ -21,6 +21,16 @@ La versione corrente di VirtuOR è compatibile con le seguenti versioni dell'Edi
      1. Nella scheda **Progetti**, fai clic su **Aggiungi**
      1. Passa alla cartella in cui hai scaricato una copia di questo repository e fai clic su **Seleziona cartella**
      1. Verifica che il progetto sia stato aggiunto come **VirtuOR_UnityProject** e fai clic su di esso per aprire il progetto
+
+### Utilizzo del Version Control, Git e GitHub
+
+Dal momento che qualche modifica inaspettata potrebbe compromettere inevitabilmente l’intero progetto, è opportuno salvaguardarsi per poter ripristinare il lavoro ad uno stato precedente.
+
+Per poter sincronizzare le modifiche tra diversi dispositivi si utilizza, appunto GitHub.
+
+La Workstation del laboratorio DEWS è già stata configurata ed è pronta all'utilizzo.
+
+Fare riferimento alla [guida step-by-step](Documentation/Configure_Code_Git.md) per poter settare l'ambiente di sviluppo ideale sul proprio Personal Computer.
 
 ## Setup Generale
 
@@ -36,7 +46,7 @@ Nella scena `Bosco_Cartoon` sono presenti i seguenti oggetti:
 3. `MINIGAMES` oggetto padre che racchiude i due minigiochi presenti nella scena:
    - [Minigame 1: Cannone](Documentation/Minigame_1-Cannon.md)
    - [Minigame 2: Puzzle](Documentation/Minigame_2-Puzzle.md)
-5. `Tutorial` oggetto padre che racchiude soltanto l'oggetto `Tutorial_intro`, in modo da avere una guida introduttiva ([Tutorial: Introduction to VR](Documentation/Tutorial_intro.md))
+4. `Tutorial` oggetto padre che racchiude soltanto l'oggetto `Tutorial_intro`, in modo da avere una guida introduttiva ([Tutorial: Introduction to VR](Documentation/Tutorial_intro.md))
 
 [**XR Origin**](https://docs.unity3d.com/2021.3/Documentation/Manual/xr-origin.html) si trova all'interno del prefab **Complete Set Up**. Questo prefab contiene tutto il necessario per un'interazione dell'utente completamente funzionale con [**XRI**](https://docs.unity3d.com/Packages/com.unity.xr.interaction.toolkit@2.4/manual/index.html). Ciò include i componenti necessari per l'input generale, l'interazione con gli oggetti e l'interazione con interfaccia utente.
 
