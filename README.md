@@ -36,19 +36,19 @@ Fare riferimento alla [guida step-by-step](Documentation/Configure_Code_Git.md) 
 
 La scena principale `Bosco_Cartoon` è situata in `Assets/VirtuOR_Elements/Scenes/Ambienti`. Questa sarà la cartella che in futuro conterrà tutte le scene per i diversi ambienti.  
 Nella scena `Bosco_Cartoon` sono presenti i seguenti oggetti:
-1. `Complete Set Up` funge da "corpo" e "testa" dell'utente virtuale e contiene il riferimento ai controller. Questo oggetto segue il movimento e la rotazione dell'utente e serve da punto di ancoraggio per la visualizzazione della scena. Questo è ilcomponente chiave per gestire la posizione e l'orientamento dell'utente nel mondo virtuale.
-2. `Environment` oggetto padre che racchiude:
+1. [`Complete Set Up`](Documentation/Complete_Set_Up.md) - funge da "corpo" e "testa" dell'utente virtuale e contiene il riferimento ai controller. Questo oggetto segue il movimento e la rotazione dell'utente e serve da punto di ancoraggio per la visualizzazione della scena. Questo è il componente chiave per gestire la posizione e l'orientamento dell'utente nel mondo virtuale.
+2. `Environment` - oggetto padre che racchiude:
    - **Terreno**: racchiude gli oggetti con componente `Terrain` e `Teleportation Area`
    - **Animali**: racchiude gli animali con componente `Animator`, in modo da avere le animazioni
    - **Illuminazione**: contiene le luci che illuminano la scena, in questo caso solo la `Directional Light`, che simula la luce naturale solare
    - **Audio**: contiene l'oggetto `Environmental_Sound`, in riproduzione automatica all'attivazione della scena
    - **Objects**: contiene gli oggetti che caratterizzano l'ambiente
-3. `MINIGAMES` oggetto padre che racchiude i due minigiochi presenti nella scena:
+3. `MINIGAMES` - oggetto padre che racchiude i due minigiochi presenti nella scena:
    - [Minigame 1: Cannone](Documentation/Minigame_1-Cannon.md)
    - [Minigame 2: Puzzle](Documentation/Minigame_2-Puzzle.md)
 4. `Tutorial` oggetto padre che racchiude soltanto l'oggetto `Tutorial_intro`, in modo da avere una guida introduttiva ([Tutorial: Introduction to VR](Documentation/Tutorial_intro.md))
 
-[**XR Origin**](https://docs.unity3d.com/2021.3/Documentation/Manual/xr-origin.html) si trova all'interno del prefab **Complete Set Up**. Questo prefab contiene tutto il necessario per un'interazione dell'utente completamente funzionale con [**XRI**](https://docs.unity3d.com/Packages/com.unity.xr.interaction.toolkit@2.4/manual/index.html). Ciò include i componenti necessari per l'input generale, l'interazione con gli oggetti e l'interazione con interfaccia utente.
+
 
 Scripts, assets, animations e prefabs si trovano nella cartella `Assets/VirtuOR_Elements`.
 

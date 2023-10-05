@@ -6,6 +6,8 @@ In questa sezione si illustreranno i passaggi da seguire per poter lavorare con 
 
 Una volta presa la giusta dimestichezza, è possibile lavorare anche in remoto, seguendo attentamente le procedure che seguiranno.
 
+Al seguente [LINK](https://www.w3schools.com/git/default.asp) è possibile apprendere le basi per poter iniziare a lavorare con i comandi Git e con GitHub.
+
 ## Version Control e Git
 
 Per poter utilizzare il Version Control basterà scaricare [Git](https://git-scm.com/) ed installarlo sul proprio computer, lasciando tutte le scelte di default durante il processo di installazione.
@@ -27,7 +29,7 @@ e in seguito
 git config --global user.email "name@domain.example"
 ```
 
-In questo modo, quando verrà effettuato un operazione da una posizione diversa dalla Workstation DEWS, sul [GitGraph](#version-control-e-git) verrà visualizzato correttamente il nome dell'utente.
+In questo modo, quando verrà effettuato un operazione da una posizione diversa dalla Workstation DEWS, sul [GitGraph](#estensioni) verrà visualizzato correttamente il nome dell'utente.
 
 ![](Images/GitGraph_users.png)
 
@@ -93,4 +95,13 @@ Dopo aver scaricato ed installato VSCode, è possibile lavorare con il [Terminal
 
 Bisogna dunque salvare tutte le modifiche, e quindi salvare la scena e il progetto tramite il menu File dell’editor Unity. Questa sarà la versione di partenza del nostro progetto, dove troveremo:
 
-### GitGraph
+### Estensioni
+Per poter lavorare al meglio, nei file di progetto è precaricato il setup del Workspace, che installerà le estensioni fondamentali per lavorare con Unity e GitHub.
+
+L'estensione ***Git Graph*** è utile per poter eseguire comodamente i comandi Git ed avere traccia del flusso di lavoro.
+
+Basterà recarsi su `Source Control` in alto a sinistra
+![](Images/source_control.png)  
+e dopo cliccare sul simbolo evidenziato
+![](Images/GitGraph_1.png)  
+si aprirà una nuova scheda dove è possibile visualizzare il flusso di lavoro.

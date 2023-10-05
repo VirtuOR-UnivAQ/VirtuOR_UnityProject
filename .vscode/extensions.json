@@ -1,5 +1,12 @@
 {
     "recommendations": [
-      "visualstudiotoolsforunity.vstuc"
+      "visualstudiotoolsforunity.vstuc",
+      "mhutchie.git-graph",
+      "kleber-swf.unity-code-snippets",
+      "tobiah.unity-tools",
+      "ms-dotnettools.csharp",
+      "ms-dotnettools.csdevkit",
+      "ms-dotnettools.vscode-dotnet-runtime",
+      "ms-dotnettools.vscodeintellicode-csharp"
     ]
 }
