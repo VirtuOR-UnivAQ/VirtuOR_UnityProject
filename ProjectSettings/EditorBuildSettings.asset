@@ -6,10 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Environment_Free.unity
+    path: Assets/VirtuOR_Elements/Scenes/Ambienti/Bosco_Cartoon.unity
     guid: c732593fe76e5a84197f9cd13963f706
   - enabled: 1
-    path: Assets/SlimUI testing/Modern Menu 1/Scenes/Demos/Demo1.unity
+    path: Assets/VirtuOR_Elements/Scenes/Demo1.unity
     guid: 275e7122fffa6fe42a97f5aab28b6f3d
   - enabled: 0
     path: Assets/SlimUI testing/Modern Menu 1/Scenes/Demos/Demo1Scene2.unity
