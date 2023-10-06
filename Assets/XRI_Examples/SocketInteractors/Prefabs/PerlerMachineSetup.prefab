@@ -27,6 +27,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8134742286824640454}
   m_RootOrder: 1
@@ -72,6 +73,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.34537315, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1795283499734401016}
   m_RootOrder: 0
@@ -131,6 +133,11 @@ MonoBehaviour:
   m_SocketActive: 1
   m_InteractableHoverScale: 1
   m_RecycleDelayTime: 1
+  m_HoverSocketSnapping: 0
+  m_SocketSnappingRadius: 0.1
+  m_SocketScaleMode: 0
+  m_FixedScale: {x: 1, y: 1, z: 1}
+  m_TargetBoundsSize: {x: 1, y: 1, z: 1}
 --- !u!114 &1476589567
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -145,7 +152,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Active: 1
   m_OverrideStartingSelectedInteractable: 1
-  m_InteractablePrefab: {fileID: 2575503929239583414, guid: 8cfdc8af9b87107498738c8db9e10893, type: 3}
+  m_InteractablePrefab: {fileID: 2575503929239583414, guid: 8cfdc8af9b87107498738c8db9e10893,
+    type: 3}
 --- !u!1 &72234114718190018
 GameObject:
   m_ObjectHideFlags: 0
@@ -174,6 +182,7 @@ Transform:
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 1.672851, y: 0, z: -0.6916745}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7807425153428955342}
   m_RootOrder: 2
@@ -197,6 +206,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -255,6 +265,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.2620541, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1795283499734401016}
   m_RootOrder: 1
@@ -314,6 +325,11 @@ MonoBehaviour:
   m_SocketActive: 1
   m_InteractableHoverScale: 1
   m_RecycleDelayTime: 1
+  m_HoverSocketSnapping: 0
+  m_SocketSnappingRadius: 0.1
+  m_SocketScaleMode: 0
+  m_FixedScale: {x: 1, y: 1, z: 1}
+  m_TargetBoundsSize: {x: 1, y: 1, z: 1}
 --- !u!114 &1100511331
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -328,7 +344,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Active: 1
   m_OverrideStartingSelectedInteractable: 1
-  m_InteractablePrefab: {fileID: 2575503929239583414, guid: 7c258324c4b2b004ca28ebf783afbb83, type: 3}
+  m_InteractablePrefab: {fileID: 2575503929239583414, guid: 7c258324c4b2b004ca28ebf783afbb83,
+    type: 3}
 --- !u!1 &1836498980444990023
 GameObject:
   m_ObjectHideFlags: 0
@@ -357,6 +374,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.26607656, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1795283499734401016}
   m_RootOrder: 7
@@ -416,6 +434,11 @@ MonoBehaviour:
   m_SocketActive: 1
   m_InteractableHoverScale: 1
   m_RecycleDelayTime: 1
+  m_HoverSocketSnapping: 0
+  m_SocketSnappingRadius: 0.1
+  m_SocketScaleMode: 0
+  m_FixedScale: {x: 1, y: 1, z: 1}
+  m_TargetBoundsSize: {x: 1, y: 1, z: 1}
 --- !u!114 &42557869
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -430,7 +453,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Active: 1
   m_OverrideStartingSelectedInteractable: 1
-  m_InteractablePrefab: {fileID: 3454302827596980038, guid: 9325a7d210e632c45b3bc97ece9f072e, type: 3}
+  m_InteractablePrefab: {fileID: 3454302827596980038, guid: 9325a7d210e632c45b3bc97ece9f072e,
+    type: 3}
 --- !u!1 &2768112915063111164
 GameObject:
   m_ObjectHideFlags: 0
@@ -462,6 +486,7 @@ Transform:
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8134742286824640454}
   - {fileID: 6413420811092807343}
@@ -488,6 +513,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -614,6 +640,11 @@ MonoBehaviour:
   m_SocketActive: 1
   m_InteractableHoverScale: 1
   m_RecycleDelayTime: 0.1
+  m_HoverSocketSnapping: 0
+  m_SocketSnappingRadius: 0.1
+  m_SocketScaleMode: 0
+  m_FixedScale: {x: 1, y: 1, z: 1}
+  m_TargetBoundsSize: {x: 1, y: 1, z: 1}
   m_GridWidth: 16
   m_GridHeight: 16
   m_CellOffset: {x: -0.05666, y: -0.05666}
@@ -655,6 +686,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8134742286824640454}
   m_RootOrder: 0
@@ -804,6 +836,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.17217708, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1795283499734401016}
   m_RootOrder: 2
@@ -863,6 +896,11 @@ MonoBehaviour:
   m_SocketActive: 1
   m_InteractableHoverScale: 1
   m_RecycleDelayTime: 1
+  m_HoverSocketSnapping: 0
+  m_SocketSnappingRadius: 0.1
+  m_SocketScaleMode: 0
+  m_FixedScale: {x: 1, y: 1, z: 1}
+  m_TargetBoundsSize: {x: 1, y: 1, z: 1}
 --- !u!114 &380568813
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -877,7 +915,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Active: 1
   m_OverrideStartingSelectedInteractable: 1
-  m_InteractablePrefab: {fileID: 5570385057160504487, guid: 842250579cf338d4c8e113fa78855e7c, type: 3}
+  m_InteractablePrefab: {fileID: 5570385057160504487, guid: 842250579cf338d4c8e113fa78855e7c,
+    type: 3}
 --- !u!1 &3087454458677022661
 GameObject:
   m_ObjectHideFlags: 0
@@ -904,6 +943,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 779324242048093848}
   - {fileID: 1010385132}
@@ -936,6 +976,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0.50482106, z: 0.319816}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1975548676}
   - {fileID: 6061344601585337845}
@@ -977,6 +1018,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.18128133, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1795283499734401016}
   m_RootOrder: 6
@@ -1036,6 +1078,11 @@ MonoBehaviour:
   m_SocketActive: 1
   m_InteractableHoverScale: 1
   m_RecycleDelayTime: 1
+  m_HoverSocketSnapping: 0
+  m_SocketSnappingRadius: 0.1
+  m_SocketScaleMode: 0
+  m_FixedScale: {x: 1, y: 1, z: 1}
+  m_TargetBoundsSize: {x: 1, y: 1, z: 1}
 --- !u!114 &1177373113
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1050,7 +1097,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Active: 1
   m_OverrideStartingSelectedInteractable: 1
-  m_InteractablePrefab: {fileID: 7421621813625602793, guid: fd5fe21d39e4f0f40aca394a474bb56d, type: 3}
+  m_InteractablePrefab: {fileID: 7421621813625602793, guid: fd5fe21d39e4f0f40aca394a474bb56d,
+    type: 3}
 --- !u!1 &3655369429389812117
 GameObject:
   m_ObjectHideFlags: 0
@@ -1077,6 +1125,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.597, z: -0.039}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2204411303144951214}
   m_RootOrder: 0
@@ -1109,6 +1158,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.09052873, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1795283499734401016}
   m_RootOrder: 5
@@ -1168,6 +1218,11 @@ MonoBehaviour:
   m_SocketActive: 1
   m_InteractableHoverScale: 1
   m_RecycleDelayTime: 1
+  m_HoverSocketSnapping: 0
+  m_SocketSnappingRadius: 0.1
+  m_SocketScaleMode: 0
+  m_FixedScale: {x: 1, y: 1, z: 1}
+  m_TargetBoundsSize: {x: 1, y: 1, z: 1}
 --- !u!114 &590115785
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1182,7 +1237,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Active: 1
   m_OverrideStartingSelectedInteractable: 1
-  m_InteractablePrefab: {fileID: 6195283527913751750, guid: 19d3c4393c2164a4a8a0ca7359a14f3b, type: 3}
+  m_InteractablePrefab: {fileID: 6195283527913751750, guid: 19d3c4393c2164a4a8a0ca7359a14f3b,
+    type: 3}
 --- !u!1 &4917048469280168094
 GameObject:
   m_ObjectHideFlags: 0
@@ -1209,6 +1265,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.0053400993, y: 1.1526499, z: 0.319816}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8736359344370047808}
   m_Father: {fileID: 1713753710938850863}
@@ -1242,6 +1299,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.08104229, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1795283499734401016}
   m_RootOrder: 3
@@ -1301,6 +1359,11 @@ MonoBehaviour:
   m_SocketActive: 1
   m_InteractableHoverScale: 1
   m_RecycleDelayTime: 1
+  m_HoverSocketSnapping: 0
+  m_SocketSnappingRadius: 0.1
+  m_SocketScaleMode: 0
+  m_FixedScale: {x: 1, y: 1, z: 1}
+  m_TargetBoundsSize: {x: 1, y: 1, z: 1}
 --- !u!114 &1589080568
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1315,7 +1378,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Active: 1
   m_OverrideStartingSelectedInteractable: 1
-  m_InteractablePrefab: {fileID: 1949772453239019422, guid: d4c1e06fbad4a7e4997fed867182f18c, type: 3}
+  m_InteractablePrefab: {fileID: 1949772453239019422, guid: d4c1e06fbad4a7e4997fed867182f18c,
+    type: 3}
 --- !u!1 &6570049726883033582
 GameObject:
   m_ObjectHideFlags: 0
@@ -1342,6 +1406,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.425, y: 0.425, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6413420811092807343}
   m_RootOrder: 0
@@ -1372,6 +1437,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 2.18, y: 1.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2204411303144951214}
   - {fileID: 1238556679943361301}
@@ -1408,6 +1474,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.35812736, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1795283499734401016}
   m_RootOrder: 8
@@ -1467,6 +1534,11 @@ MonoBehaviour:
   m_SocketActive: 1
   m_InteractableHoverScale: 1
   m_RecycleDelayTime: 1
+  m_HoverSocketSnapping: 0
+  m_SocketSnappingRadius: 0.1
+  m_SocketScaleMode: 0
+  m_FixedScale: {x: 1, y: 1, z: 1}
+  m_TargetBoundsSize: {x: 1, y: 1, z: 1}
 --- !u!114 &200543435
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1481,7 +1553,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Active: 1
   m_OverrideStartingSelectedInteractable: 1
-  m_InteractablePrefab: {fileID: 4716839180546583445, guid: 7e5b86f60ba9a1a4d9329940c6d328b0, type: 3}
+  m_InteractablePrefab: {fileID: 4716839180546583445, guid: 7e5b86f60ba9a1a4d9329940c6d328b0,
+    type: 3}
 --- !u!1 &8441956399205818900
 GameObject:
   m_ObjectHideFlags: 0
@@ -1512,6 +1585,7 @@ Transform:
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 2.8153996, y: 0, z: -0.43411985}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3655369429389812116}
   m_Father: {fileID: 7807425153428955342}
@@ -1536,6 +1610,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -1662,6 +1737,11 @@ MonoBehaviour:
   m_SocketActive: 1
   m_InteractableHoverScale: 1
   m_RecycleDelayTime: 1
+  m_HoverSocketSnapping: 0
+  m_SocketSnappingRadius: 0.1
+  m_SocketScaleMode: 0
+  m_FixedScale: {x: 1, y: 1, z: 1}
+  m_TargetBoundsSize: {x: 1, y: 1, z: 1}
   m_Lock:
     m_RequiredKeys:
     - {fileID: 11400000, guid: 8496af77b6fb51643bc04caf6f8200bf, type: 2}
@@ -1693,6 +1773,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.0037543774, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1795283499734401016}
   m_RootOrder: 4
@@ -1752,6 +1833,11 @@ MonoBehaviour:
   m_SocketActive: 1
   m_InteractableHoverScale: 1
   m_RecycleDelayTime: 1
+  m_HoverSocketSnapping: 0
+  m_SocketSnappingRadius: 0.1
+  m_SocketScaleMode: 0
+  m_FixedScale: {x: 1, y: 1, z: 1}
+  m_TargetBoundsSize: {x: 1, y: 1, z: 1}
 --- !u!114 &2056844844
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1766,7 +1852,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Active: 1
   m_OverrideStartingSelectedInteractable: 1
-  m_InteractablePrefab: {fileID: 5484663799714163960, guid: 87caa2bef59abf5468d78b21c454887e, type: 3}
+  m_InteractablePrefab: {fileID: 5484663799714163960, guid: 87caa2bef59abf5468d78b21c454887e,
+    type: 3}
 --- !u!1001 &7769609526279388045
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1774,51 +1861,63 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7807425153428955342}
     m_Modifications:
-    - target: {fileID: 826279624814729900, guid: b1b1dbeb4f4711945b5b2d72116081bc, type: 3}
+    - target: {fileID: 826279624814729900, guid: b1b1dbeb4f4711945b5b2d72116081bc,
+        type: 3}
       propertyPath: m_Name
       value: Battery
       objectReference: {fileID: 0}
-    - target: {fileID: 8854936745891440792, guid: b1b1dbeb4f4711945b5b2d72116081bc, type: 3}
+    - target: {fileID: 8854936745891440792, guid: b1b1dbeb4f4711945b5b2d72116081bc,
+        type: 3}
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8854936745891440792, guid: b1b1dbeb4f4711945b5b2d72116081bc, type: 3}
+    - target: {fileID: 8854936745891440792, guid: b1b1dbeb4f4711945b5b2d72116081bc,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.372023
       objectReference: {fileID: 0}
-    - target: {fileID: 8854936745891440792, guid: b1b1dbeb4f4711945b5b2d72116081bc, type: 3}
+    - target: {fileID: 8854936745891440792, guid: b1b1dbeb4f4711945b5b2d72116081bc,
+        type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.01
       objectReference: {fileID: 0}
-    - target: {fileID: 8854936745891440792, guid: b1b1dbeb4f4711945b5b2d72116081bc, type: 3}
+    - target: {fileID: 8854936745891440792, guid: b1b1dbeb4f4711945b5b2d72116081bc,
+        type: 3}
       propertyPath: m_LocalPosition.z
       value: -0.4681619
       objectReference: {fileID: 0}
-    - target: {fileID: 8854936745891440792, guid: b1b1dbeb4f4711945b5b2d72116081bc, type: 3}
+    - target: {fileID: 8854936745891440792, guid: b1b1dbeb4f4711945b5b2d72116081bc,
+        type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8854936745891440792, guid: b1b1dbeb4f4711945b5b2d72116081bc, type: 3}
+    - target: {fileID: 8854936745891440792, guid: b1b1dbeb4f4711945b5b2d72116081bc,
+        type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8854936745891440792, guid: b1b1dbeb4f4711945b5b2d72116081bc, type: 3}
+    - target: {fileID: 8854936745891440792, guid: b1b1dbeb4f4711945b5b2d72116081bc,
+        type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8854936745891440792, guid: b1b1dbeb4f4711945b5b2d72116081bc, type: 3}
+    - target: {fileID: 8854936745891440792, guid: b1b1dbeb4f4711945b5b2d72116081bc,
+        type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8854936745891440792, guid: b1b1dbeb4f4711945b5b2d72116081bc, type: 3}
+    - target: {fileID: 8854936745891440792, guid: b1b1dbeb4f4711945b5b2d72116081bc,
+        type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8854936745891440792, guid: b1b1dbeb4f4711945b5b2d72116081bc, type: 3}
+    - target: {fileID: 8854936745891440792, guid: b1b1dbeb4f4711945b5b2d72116081bc,
+        type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8854936745891440792, guid: b1b1dbeb4f4711945b5b2d72116081bc, type: 3}
+    - target: {fileID: 8854936745891440792, guid: b1b1dbeb4f4711945b5b2d72116081bc,
+        type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
@@ -1826,6 +1925,7 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: b1b1dbeb4f4711945b5b2d72116081bc, type: 3}
 --- !u!4 &1238556679943361301 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 8854936745891440792, guid: b1b1dbeb4f4711945b5b2d72116081bc, type: 3}
+  m_CorrespondingSourceObject: {fileID: 8854936745891440792, guid: b1b1dbeb4f4711945b5b2d72116081bc,
+    type: 3}
   m_PrefabInstance: {fileID: 7769609526279388045}
   m_PrefabAsset: {fileID: 0}
